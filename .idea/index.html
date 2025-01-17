@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<!--root element(<html>)-->
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Keyword" content="html , css , javascript ">
+    <meta name = "description" content= "Welcome to my website.I'm Nethushi @ Ijse">
+    <meta name="author" content="nethushi">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0  minimum-scale=4 maximum-scale=5">
+
+    <title>IJSE</title>
+    <link rel="icon" type="image/ico" href="favicon.ico">
+</head>
+<body>
+<h1><u>Hello HTML !</u></h1>
+<p>Welcome to <em> IJSE</em> GDSE Internet Technologies module!</p>
+<!--    Nesting Element-->
+<em><em><p>Nesting Element</p></em></em>
+
+<!--    Inline Level Element-->
+<em>Hello 01</em><em> Hello 02</em><em> Hello 03</em>
+
+<!--    Block Level Elment-->
+<div>HTML 01</div><div>HTML 02</div><div>HTML 03</div>
+
+<!-- Void Element -->
+<img src="123.jpg">
+<!--HTML ELEMENTS (Comment ekak dnne mehema  Ctrl+?)-->
+<!-- Heading Tags -->
+<h1>Heading 01</h1>
+<h2>Heading 02</h2>
+<h3>Heading 03</h3>
+<h4>Heading 04</h4>
+<h5>Heading 05</h5>
+<h6>Heading 06</h6>
+<h7>Heading 07</h7>
+
+<!-- Paragraph Tag -->
+<p>Lorem ipsum dolor sit amet,<em>consectetur adipisicing</em>  elit. Atque consequuntur cumque eligendi error facilis ipsa iusto nobis quia quod reiciendis repellat saepe, soluta tempore! Cum deleniti in nisi placeat quibusdam?</p>
+
+<!-- Emphasis (Important) -->
+<em>Welcome To IJSE !</em>
+
+<!-- Strong (wedipura highlight wela penwa)-->
+<strong>Hello HTML</strong>
+
+<!-- Italic,Bold,Underline-->
+<i>Italic</i>
+<b>Bold</b>
+<u>Underline</u>
+
+<!-- SuperScript<sup> and SubScript<sub> -->
+<p>22<sup>nd</sup> of January 2025</p>
+<p>H<sub>2</sub>O</p>
+
+<!--Preformatted Text <pre> Tag -->
+<p>
+<pre>
+        <code>
+public static void main (String [] args){
+    System.out.println("Hello World");
+}
+        </code>
+   </pre>
+</p>
+
+<!-- Address Tag-->
+<address>1100,Flower Rd,Colombo 07</address>
+
+<!-- Time Tag-->
+<time datetime="2025-01-25">2025-01-25</time>
+
+<!-- Block Quote Tag (Uputagannawa kohen hr)-->
+<blockquote cite="https://en.wikipedia.org/wiki/Sri_Lanka">Sri Lanka,<sup>[c]</sup> historically known as Ceylon,<sup>[d]</sup> and officially the Democratic Socialist Republic of Sri Lanka, is an island country in South Asia.</blockquote>
+
+<!--
+1.Ordered List
+2.Un-ordered List
+3.Description List
+4.Nested List
+-->
+
+<!-- ////////////Ordered List<ol> <li>(list item)////////////-->
+<hr>
+<h3>Ordered List</h3>
+<b>Languages</b>
+<ol>
+
+    <li>Java</li>
+    <li>Python</li>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>Java-Script</li>
+</ol>
+
+<hr>
+<ol start="6">
+
+    <li>Java</li>
+    <li>Python</li>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>Java-Script</li>
+</ol>
+<hr>
+<ol type="a">
+
+    <li>Java</li>
+    <li>Python</li>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>Java-Script</li>
+</ol>
+
+<ol type="A">
+
+    <li>Java</li>
+    <li>Python</li>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>Java-Script</li>
+</ol>
+
+<ol type="i">
+
+    <li>Java</li>
+    <li>Python</li>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>Java-Script</li>
+</ol>
+
+<ol type="I">
+
+    <li>Java</li>
+    <li>Python</li>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>Java-Script</li>
+</ol>
+
+<ol type="1">
+
+    <li>Java</li>
+    <li>Python</li>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>Java-Script</li>
+</ol>
+<hr>
+<ol start="5" reversed type="a" >
+
+    <li>Java</li>
+    <li>Python</li>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>Java-Script</li>
+</ol>
+<hr>
+<h3>Un-Ordered List</h3>
+<ul type="circle">
+    <li>Java</li>
+    <li>Python</li>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>Java-Script</li>
+</ul>
+<hr>
+<h3>Description List</h3>
+<!--Description List
+<dl> = description list tag
+<dt> = description topic
+<dd> = description details
+-->
+<dl>
+    <dt><b>FrontEnd Technologies</b></dt>
+    <dd>HTML</dd>
+    <dd>CSS</dd>
+    <dd>Java-Script</dd>
+    <dd>React.js</dd>
+    <dd>Angular</dd>
+    <dd>Vue.js</dd>
+    <dd>Remix.js</dd>
+    <br>
+    <dt><b>BackEnd Technologies</b></dt>
+    <dd>Java</dd>
+    <dd>Spring</dd>
+    <dd>Mongoose</dd>
+    <dd>MongoDB</dd>
+    <dd>Express.js</dd>
+</dl>
+<hr>
+<h3>Nested List</h3>
+<ul>
+    <li>Java</li>
+    <li>Project Management</li>
+    <li>Internet Technology</li>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JS</li>
+    </ul>
+    <li>RAD</li>
+    <ol>
+        <li>Node.js</li>
+        <li>React.js</li>
+        <li>React Native</li>
+    </ol>
+</ul>
+<hr>
+<ol>
+    <li>Sri Lanka</li>
+    <li>India
+        <ol start="5" type="a">
+            <li>Western India</li>
+            <ul type="square">
+                <li>Goa</li>
+                <li>Gujarat
+                    <ul type="disc">
+                        <li>Area 1</li>
+                        <li>Area 2</li>
+                        <li>Area 3</li>
+                        <li>Area 4</li>
+                    </ul>
+                </li>
+            </ul>
+            <li>Eastern India</li>
+            <li>Northern India</li>
+            <li>Southern India
+                <ul type="circle">
+                    <li>Kerala</li>
+                    <li>Chennai</li>
+                </ul>
+            </li>
+        </ol>
+    </li>
+</ol>
+
+<hr>
+
+
+<ol>
+    <li>Sri Lanka</li>
+    <li>India
+        <ol start="5" type="a">
+            <li><u>Western India</u>
+                <p>Welcome to <strong>Western India</strong></p>
+                <ul type="square">
+                    <li>Goa</li>
+                    <p>Most <em>beautiful</em> area in the world.</p>
+                    <li>Gujarat
+                        <ul type="disc">
+                            <li>Area 1</li>
+                            <li><mark>Area 2</mark></li>
+                            <li>Area 3</li>
+                            <li>Area 4</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>Eastern India</li>
+            <li>Northern India</li>
+            <li>Southern India
+                <ul type="circle">
+                    <li>Kerala</li>
+                    <li><h1>Chennai</h1></li>
+                </ul>
+            </li>
+        </ol>
+    </li>
+</ol>
+<hr>
+
+<!--
+ <table> = define table
+ <thead> = define table header
+ <th> = table head
+ <tbody> = define table body
+ <tr> = table row
+ <td> = table data
+ <caption> = add a caption to the table
+ -->
+<table border="1">
+    <caption>Student Details</caption>
+    <thead >
+    <th>#ID</th>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Mobile</th>
+    <th>Address</th>
+    </thead>
+    <tbody>
+    <tr>
+        <td>001</td>
+        <td>Saman</td>
+        <td>Perera</td>
+        <td>+94 78 960 5700</td>
+        <td>Panadura</td>
+    </tr>
+    <tr>
+        <td>002</td>
+        <td>Kavindu</td>
+        <td>Samarasinghe</td>
+        <td>+94 78 456 2135</td>
+        <td>Colombo</td>
+    </tr>
+    <tr>
+        <td>003</td>
+        <td>Janith</td>
+        <td>Rathnayake</td>
+        <td>+94 78 454 1165</td>
+        <td>Matara</td>
+    </tr>
+    </tbody>
+    <tfoot >
+    <th>#ID</th>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Mobile</th>
+    <th>Address</th>
+    </tfoot>
+</table>
+<hr>
+<!-- Colspan-->
+<table border="1">
+    <caption>Student Details</caption>
+    <thead >
+    <th>#ID</th>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Mobile 01</th>
+    <th>Mobile 02</th>
+    <th>Address</th>
+    </thead>
+    <tbody>
+    <tr>
+        <td>001</td>
+        <td>Saman</td>
+        <td>Perera</td>
+        <td colspan="2">+94 78 960 5700</td>
+        <td>Panadura</td>
+    </tr>
+    <tr>
+        <td>002</td>
+        <td>Kavindu</td>
+        <td>Samarasinghe</td>
+        <td colspan="2">+94 78 456 2135</td>
+        <td>Colombo</td>
+    </tr>
+    <tr>
+        <td>003</td>
+        <td>Janith</td>
+        <td>Rathnayake</td>
+        <td colspan="2">+94 78 454 1165</td>
+        <td>Matara</td>
+    </tr>
+    </tbody>
+    <tfoot >
+    <th>#ID</th>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Mobile 01</th>
+    <th>Mobile 02</th>
+    <th>Address</th>
+    </tfoot>
+</table>
+<hr>
+<!--Rowspan -->
+<table border="1">
+    <caption>Student Details</caption>
+    <thead >
+    <th>#ID</th>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Mobile</th>
+    <th>Address</th>
+    </thead>
+    <tbody>
+    <tr>
+        <td>001</td>
+        <td>Saman</td>
+        <td>Perera</td>
+        <td>+94 78 960 5700</td>
+        <td>Panadura</td>
+    </tr>
+    <tr>
+        <td>002</td>
+        <td>Kavindu</td>
+        <td>Samarasinghe</td>
+        <td rowspan="2">+94 78 456 2135</td>
+        <td rowspan="2">Colombo</td>
+    </tr>
+    <tr>
+        <td>003</td>
+        <td>Thineth</td>
+        <td>Samarasinghe</td>
+    </tr>
+    <tr>
+        <td>004</td>
+        <td>Janith</td>
+        <td>Rathnayake</td>
+        <td>+94 78 454 1165</td>
+        <td>Matara</td>
+    </tr>
+    </tbody>
+    <tfoot >
+    <th>#ID</th>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Mobile</th>
+    <th>Address</th>
+    </tfoot>
+</table>
+<hr>
+<table border="1">
+    <thead>
+    <th>Id</th>
+    <th>Name</th>
+    <th colspan="2">Email</th>
+    <th>Parent's Name</th>
+    </thead>
+    <tbody>
+    <tr>
+        <td>1</td>
+        <td>Kavindu</td>
+        <td>kavindu1@gmail.com</td>
+        <td>kavindu2@gmail.com</td>
+        <td>Mr Rathnayake</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Janith</td>
+        <td>janith1@gmail.com</td>
+        <td>janith2@gmail.com</td>
+        <td>Mr Sarath</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>Sheron</td>
+        <td colspan="2">sheron@gmail.com</td>
+        <td rowspan="2">Mr Kamal</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>Brian</td>
+        <td>brian1@gmail.com</td>
+        <td>brian2@gmail.com</td>
+
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>Vishwa</td>
+        <td>vishwa1@gmail.com</td>
+        <td>vishwa2@gmail.com</td>
+        <td>Mr Nihal</td>
+    </tr>
+    <tr>
+        <td>6</td>
+        <td>Saroj</td>
+        <td rowspan="2" colspan="2">saroja@gmail.com</td>
+        <td rowspan="2">Mr Nelson</td>
+    </tr>
+    <tr>
+        <td>7</td>
+        <td>Sarojini</td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
