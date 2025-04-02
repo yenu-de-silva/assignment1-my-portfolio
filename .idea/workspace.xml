@@ -4,44 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="da98d20f-1244-40f4-b503-28311313eb55" name="Changes" comment="updated">
-      <change afterPath="$PROJECT_DIR$/assets/logo/green.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sytles.css" beforeDir="false" afterPath="$PROJECT_DIR$/Sytles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/JS.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/NET.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/c.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/canva (2).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/facebook.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/figma.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/geany png.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/git.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/gmail.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/html.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/ijse.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/instagram.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/intelij.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/java.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/linkedin.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/location.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/mysql.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/next.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/nodejs.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/notion.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/open university logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/pascal.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/php.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/portfolio.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/python.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/react.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/scenebuilder.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/springboot.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/vscode.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+    <list default="true" id="da98d20f-1244-40f4-b503-28311313eb55" name="Changes" comment="Delete style css">
+      <change beforePath="$PROJECT_DIR$/index2.html" beforeDir="false" afterPath="$PROJECT_DIR$/index2.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,7 +117,7 @@
       <workItem from="1739075291648" duration="48000" />
       <workItem from="1739158555969" duration="218000" />
       <workItem from="1740194029002" duration="1721000" />
-      <workItem from="1743577401939" duration="6636000" />
+      <workItem from="1743577401939" duration="7152000" />
     </task>
     <task id="LOCAL-00001" summary="updated">
       <option name="closed" value="true" />
@@ -179,7 +143,47 @@
       <option name="project" value="LOCAL" />
       <updated>1738857495202</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="updated">
+      <option name="closed" value="true" />
+      <created>1743584272029</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1743584272030</updated>
+    </task>
+    <task id="LOCAL-00005" summary="updated">
+      <option name="closed" value="true" />
+      <created>1743584378060</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1743584378060</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Delete style css">
+      <option name="closed" value="true" />
+      <created>1743584432414</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1743584432414</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Delete style css">
+      <option name="closed" value="true" />
+      <created>1743584451741</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1743584451741</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Delete style css">
+      <option name="closed" value="true" />
+      <created>1743584462168</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1743584462168</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -187,6 +191,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated" />
+    <MESSAGE value="Delete style css" />
+    <option name="LAST_COMMIT_MESSAGE" value="Delete style css" />
   </component>
 </project>
