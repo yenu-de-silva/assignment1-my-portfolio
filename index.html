@@ -13,6 +13,586 @@
     <meta name="author" content="Himadi Yenushka">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+<style>
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+        scroll-behavior: smooth;
+    }
+
+    body {
+        background-color: #f5f5f5;
+        color: #333;
+        line-height: 1.6;
+    }
+
+    body {
+        background-color: grey;
+    }
+    /* General Styles */
+    body {
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f5f5f5;
+        color: #333;
+    }
+
+    /* Main Section */
+    #homeMain {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        text-align: center;
+        background: linear-gradient(to right, #7d96c8, #8789d3);
+        color: white;
+    }
+
+    /* Section Styling */
+    section {
+        max-width: 600px;
+        padding: 20px;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        border-radius: 15px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Title Styling */
+    h3 {
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+
+    /* Bold Name */
+    h3 b {
+        color: #000000;
+    }
+
+    /* Paragraph Styling */
+    p {
+        font-size: 1.2rem;
+        line-height: 1.6;
+    }
+
+    /* Highlight Keywords */
+    p span {
+        color: #ffcc00;
+        font-weight: bold;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        #homeMain {
+            height: auto;
+            padding: 50px 20px;
+        }
+
+        section {
+            width: 90%;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+        }
+
+        p {
+            font-size: 1rem;
+        }
+    }
+    /* General Styles */
+    body {
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f5f5f5;
+        color: #333;
+    }
+
+    /* Container Styling */
+    .container {
+        max-width: 800px;
+        margin: auto;
+        padding: 20px;
+        text-align: center;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Title Styling */
+    h3 {
+        font-size: 2rem;
+        margin-bottom: 10px;
+        color: #182848;
+    }
+
+    /* Highlight Titles */
+    .title {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 10px;
+        color: #4b6cb7;
+    }
+
+    /* Paragraph Styling */
+    p {
+        font-size: 1.2rem;
+        line-height: 1.6;
+        color: #555;
+    }
+
+
+    .skills-section {
+        margin-top: 20px;
+    }
+
+
+    .skill {
+        margin-bottom: 20px;
+    }
+
+
+    .skill-name {
+        font-size: 1.1rem;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+
+    .progress-bar {
+        width: 100%;
+        height: 12px;
+        background: #e0e0e0;
+        border-radius: 6px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .progress {
+        height: 100%;
+        width: 0%;
+        background: linear-gradient(to right, #4b6cb7, #182848);
+        border-radius: 6px;
+        transition: width 1s ease-in-out;
+    }
+
+    .html .progress { width: 80%; background: #fd2572; }
+    .css .progress { width: 70%; background: #18496c; }
+    .java .progress { width: 80%; background: #eafd12; }
+    .figma .progress { width: 90%; background: #9c65b6; }
+    .javascript .progress { width: 60%; background: #00ffd1; }
+
+    @media (max-width: 768px) {
+        .container {
+            width: 90%;
+            padding: 15px;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+        }
+
+        p {
+            font-size: 1rem;
+        }
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 50px;
+        background-color: #987;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+    }
+
+    h3{
+        background-color: lightpink;
+    }
+
+    p{
+        background-color: white;
+    }
+
+    h1{
+        background-color: lightblue;
+    }
+    .navbar ul {
+        list-style: none;
+        display: flex;
+    }
+
+    .navbar ul li {
+        margin: 0 15px;
+    }
+
+    .navbar ul li a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        padding: 10px;
+        transition: 0.3s;
+    }
+
+    .navbar ul li a:hover {
+        color: #ff6600;
+        border-bottom: 2px solid #ff6600;
+    }
+
+    /* Header Section */
+    header {
+        text-align: center;
+        padding: 100px 20px;
+        background: linear-gradient(to right, #789, #456);
+        color: white;
+    }
+
+    .header h1 {
+        font-size: 2.5rem;
+    }
+
+    .header p {
+        font-size: 1.2rem;
+        margin-top: 10px;
+    }
+
+    /* Sections */
+    section {
+        padding: 80px 50px;
+        text-align: center;
+    }
+
+    .section h2 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+        color: #333;
+    }
+
+    .section p {
+        font-size: 1.1rem;
+        color: #666;
+    }
+
+    /* Skills Grid */
+    .skills-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        gap: 20px;
+        padding: 30px;
+        justify-items: center;
+    }
+
+    .skill {
+        background: #fff;
+        padding: 15px;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s;
+    }
+
+    .skill:hover {
+        transform: scale(1.1);
+    }
+
+    .skill img {
+        width: 60px;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .skill p {
+        font-size: 1rem;
+        font-weight: bold;
+    }
+
+    /* Projects Section */
+    .projects-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+        margin-top: 20px;
+    }
+
+    .project-card {
+        background: white;
+        border-radius: 12px;
+        padding: 20px;
+        width: 300px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .project-card:hover {
+        transform: scale(1.05);
+    }
+
+    .project-card img {
+        width: 100%;
+        border-radius: 8px;
+    }
+
+    .project-card h3 {
+        margin-top: 10px;
+        color: #333;
+    }
+
+    .project-card p {
+        font-size: 0.9rem;
+        color: #666;
+        margin-top: 5px;
+    }
+
+
+    /* Contact Section */
+    .contact h3 {
+        background: #222;
+        color: white;
+        padding: 50px 0;
+        text-align: center;
+    }
+
+    .contact h2 {
+        margin-bottom: 20px;
+    }
+
+    .contact-links {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .contact-links a img {
+        width: 40px;
+        transition: 0.3s;
+    }
+
+    .contact-links a:hover img {
+        transform: scale(1.2);
+    }
+
+    .cv-button {
+        display: inline-block;
+        padding: 12px 25px;
+        background: #ff6600;
+        color: white;
+        font-size: 1rem;
+        font-weight: bold;
+        border-radius: 8px;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+
+    .cv-button:hover {
+        background: #cc5500;
+    }
+
+    @media (max-width: 768px) {
+        nav {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .navbar ul {
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .skills-container {
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        }
+    }
+
+    body {
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        padding: 0;
+        background: #f5f5f5;
+        color: #333;
+    }
+
+    #contact {
+        background: #ffffff;
+        padding: 50px 0;
+        text-align: center;
+    }
+
+    .container {
+        width: 50%;
+        margin: auto;
+        background: #fff;
+        padding: 30px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+    }
+
+    h1 {
+        color: #222;
+        font-size: 28px;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+
+    /* Social Icons */
+    .social-icons {
+        margin: 20px 0;
+    }
+
+    .social-icons img {
+        width: 40px;
+        margin: 0 10px;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .social-icons img:hover {
+        transform: scale(1.2);
+    }
+
+    .contact-info {
+        font-size: 16px;
+        color: #fff6f6;
+        margin-bottom: 30px;
+    }
+
+    .contact-info strong {
+        display: block;
+        font-size: 18px;
+        color: #222;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    label {
+        font-size: 14px;
+        margin: 10px 0 5px;
+        text-align: left;
+        width: 100%;
+        font-weight: 500;
+    }
+
+    input, textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 14px;
+        transition: 0.3s ease-in-out;
+    }
+
+    input:focus, textarea:focus {
+        border-color: #0073e6;
+        outline: none;
+        box-shadow: 0 0 8px rgba(0, 115, 230, 0.2);
+    }
+
+    textarea {
+        resize: none;
+    }
+
+    input[type="submit"] {
+        margin-top: 15px;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 5px;
+        background: #db8bff;
+        color: #fff;
+        font-size: 16px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    input[type="submit"]:hover {
+        background: #005bb5;
+    }
+
+    /* Footer */
+    footer {
+        background: linear-gradient(to right, #bed7ff, #849bc3);
+        color: #d8c9c9;
+        text-align: center;
+        padding: 20px 10px;
+        font-family: 'Poppins', sans-serif;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    footer div {
+        margin: 10px;
+    }
+
+    footer h2  {
+        color: #000000;
+        margin-bottom: 10px;
+    }
+
+    footer h4 {
+        color: #000000;
+        margin-bottom: 10px;
+    }
+
+    footer button {
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+        margin: 5px;
+    }
+
+    footer button:hover {
+        transform: scale(1.2);
+    }
+
+    footer img {
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease;
+    }
+
+    footer img:hover {
+        transform: scale(1.1);
+    }
+
+    .nav_item {
+        display: block;
+        color: #5e9fdd;
+        text-decoration: none;
+        font-size: 14px;
+        transition: color 0.3s;
+        padding: 5px;
+    }
+
+    .nav_item:hover {
+        color: #000000;
+    }
+
+    footer p {
+        font-size: 12px;
+        opacity: 0.8;
+        margin-top: 15px;
+    }
+
+
+
+
+</style>
+
+
+
 <body>
 
 <!--------------------------Navigation------------------------------------->
@@ -20,7 +600,7 @@
     <header>
         <!-- icon -->
         <div>
-            <img src = "assets/Screenshot 2025-01-20 122149.png" title = "Himadi" alt = "my pic 1" width = "50"> portfolio
+            <img src = "assets/icons/icon.png" title = "Himadi" alt = "my pic 1" width = "500"> portfolio
         </div>
 
         <!-- navigation -->
@@ -50,30 +630,30 @@
         </section>
         <section>
             <div>
-                <img src = "assets/image.png" title = "Himadi" alt = "my pic 1" width = "500">
+                <img src = "assets/wedding%20jpg.jpg" title = "Himadi" alt = "my pic 1" width = "500">
             </div>
             <div>
                 <button>
-                    <img src="assets/download cv.webp" alt="Git Icon" width = "20" > CV
+                    <img src="assets/download cv.webp" alt="Git Icon" width = "100" > CV
                 </button>
                 <br><br>
 
                 <div>
                     <div>
                         <button>
-                            <img src = "assets/facebook.png" title = "facebook" alt = "facebook" width = "50">
+                            <img src = "assets/logo/facebook.png" title = "facebook" alt = "facebook" width = "50">
                         </button>
                         <button>
-                            <img src = "assets/instagram.png" title = "instagram" alt = "instagram" width = "50">
+                            <img src = "assets/logo/instagram.png" title = "instagram" alt = "instagram" width = "50">
                         </button>
                         <button>
-                            <img src = "assets/linkedin.png" title = "linkedin" alt = "linkedin" width = "50">
+                            <img src = "assets/logo/linkedin.png" title = "linkedin" alt = "linkedin" width = "50">
                         </button>
                         <button>
-                            <img src = "assets/git.png" title = "git" alt = "git" width = "50">
+                            <img src = "assets/logo/git.png" title = "git" alt = "git" width = "50">
                         </button>
                         <button>
-                            <img src = "assets/gmail.png" title = "gmail" alt = "gmail" width = "50">
+                            <img src = "assets/logo/gmail.png" title = "gmail" alt = "gmail" width = "50">
                         </button>
                     </div>
                 </div>
@@ -105,28 +685,31 @@
                 <p>
                     Like a berry patch, my skills and experiences are diverse and fruitful. I'm Himadi Yenushka, a developer passionate about cultivating ideas into innovative solutions."
                 </p>
-              <br><br>
+                <br><br>
             </div>
             <div>
                 <button>
-                    <img src = "assets/facebook.png" title = "facebook" alt = "facebook" width = "50">
+                    <img src = "assets/logo/facebook.png" title = "facebook" alt = "facebook" width = "50">
                 </button>
                 <button>
-                    <img src = "assets/instagram.png" title = "instagram" alt = "instagram" width = "50">
+                    <img src = "assets/logo/instagram.png" title = "instagram" alt = "instagram" width = "50">
                 </button>
                 <button>
-                    <img src = "assets/linkedin.png" title = "linkedin" alt = "linkedin" width = "50">
+                    <img src = "assets/logo/linkedin.png" title = "linkedin" alt = "linkedin" width = "50">
                 </button>
                 <button>
-                    <img src = "assets/git.png" title = "git" alt = "git" width = "50">
+                    <img src = "assets/logo/git.png" title = "git" alt = "git" width = "50">
                 </button>
                 <button>
-                    <img src = "assets/gmail.png" title = "gmail" alt = "gmail" width = "50">
+                    <img src = "assets/logo/gmail.png" title = "gmail" alt = "gmail" width = "50">
                 </button>
             </div>
+            <br>
             <div>
-                <img src="assets/yellow jpg.jpg" title="yellowpic" alt="yellowpic" width="50">
+                <img src="assets/yellow jpg.jpg" title="yellowpic" alt="yellowpic" width="250">
             </div>
+            <br>
+
         </section>
     </main>
 
@@ -141,7 +724,7 @@
                 </p>
             </div>
             <div>
-                <img src = "assets/open university logo.png" title = "OpenUniversity" alt = "OpenUniversity" width = "200">
+                <img src = "assets/icons/open university logo.png" title = "OpenUniversity" alt = "OpenUniversity" width = "200">
                 <p>Successfully completed the English MyClass program at the Open University , Ambalangoda !</p>
             </div>
             <div>
@@ -153,7 +736,7 @@
                 <p>Completed my Diploma in Information Technology at E-Nenapiyasa Code Academy!</p>
             </div>
             <div>
-                <img src = "assets/ijse.png" title = "IJSE" alt = "IJSE" width = "200">
+                <img src = "assets/icons/ijse.png" title = "IJSE" alt = "IJSE" width = "200">
                 <p>Currently pursuing the Higher National Diploma in Software Engineering (GDSE) at IJSE!</p>
             </div>
         </section>
@@ -165,27 +748,27 @@
         <section>
             <p>Skills & Technologies</p>
             <div>
-                <img src = "assets/java.png" title = "java" alt = "java" width = "20">
-                <img src = "assets/html.png" title = "html" alt = "html" width = "20">
-                <img src = "assets/css.png" title = "css" alt = "css" width = "20">
-                <img src = "assets/js.jpg" title = "js" alt = "js" width = "20">
-                <img src = "assets/python.png" title = "python" alt = "python" width = "20">
-                <img src = "assets/react.png" title = "react" alt = "react" width = "20">
-                <img src = "assets/scenebuilder.png" title = "scenebuilder" alt = "scenebuilder" width = "20">
-                <img src = "assets/springboot.png" title = "springboot" alt = "springboot" width = "20">
-                <img src = "assets/intelij.png" title = "intelij" alt = "intelij" width = "20">
-                <img src = "assets/figma.png" title = "figma" alt = "figma" width = "20">
-                <img src = "assets/mysql.png" title = "mysql" alt = "mysql" width = "20">
-                <img src = "assets/c.png" title = "c" alt = "c" width = "20">
-                <img src = "assets/canva.png" title = "canva" alt = "canva" width = "20">
-                <img src = "assets/git.png" title = "git" alt = "git" width = "20">
-                <img src = "assets/vscode.png" title = "vs" alt = "vs" width = "20">
-                <img src = "assets/gmail.png" title = "gmail" alt = "gmail" width = "20">
-                <img src = "assets/medium.png" title = "medium" alt = "medium" width = "20">
-                <img src = "assets/angular.png" title = "angular" alt = "angular" width = "20">
-                <img src = "assets/notion.png" title = "notion" alt = "notion" width = "20">
-                <img src = "assets/nodejs.png" title = "nodejs" alt = "nodejs" width = "20">
-                <img src = "assets/phporg.png" title = "php" alt = "php" width = "20">
+                <img src = "assets/logo/java.png" title = "java" alt = "java" width = "50">
+                <img src = "assets/logo/html.png" title = "html" alt = "html" width = "50">
+                <img src = "assets/logo/css.png" title = "css" alt = "css" width = "50">
+                <img src = "assets/logo/js.jpg" title = "js" alt = "js" width = "50">
+                <img src = "assets/logo/python.png" title = "python" alt = "python" width = "50">
+                <img src = "assets/logo/react.png" title = "react" alt = "react" width = "50">
+                <img src = "assets/logo/scenebuilder.png" title = "scenebuilder" alt = "scenebuilder" width = "50">
+                <img src = "assets/logo/springboot.png" title = "springboot" alt = "springboot" width = "50">
+                <img src = "assets/logo/intelij.png" title = "intelij" alt = "intelij" width = "50">
+                <img src = "assets/logo/figma.png" title = "figma" alt = "figma" width = "50">
+                <img src = "assets/logo/mysql.png" title = "mysql" alt = "mysql" width = "50">
+                <img src = "assets/logo/c.png" title = "c" alt = "c" width = "50">
+                <img src = "assets/logo/canva%20(2).png" title = "canva" alt = "canva" width = "50">
+                <img src = "assets/logo/git.png" title = "git" alt = "git" width = "50">
+                <img src = "assets/logo/vscode.png" title = "vs" alt = "vs" width = "50">
+                <img src = "assets/logo/gmail.png" title = "gmail" alt = "gmail" width = "50">
+                <img src = "assets/medium.png" title = "medium" alt = "medium" width = "50">
+                <!--                <img src = "assets/logo/" title = "angular" alt = "angular" width = "50">-->
+                <img src = "assets/logo/notion.png" title = "notion" alt = "notion" width = "50">
+                <img src = "assets/logo/nodejs.png" title = "nodejs" alt = "nodejs" width = "50">
+                <img src = "assets/logo/php.png" title = "php" alt = "php" width = "50">
             </div>
             <h3>My creative skill and Experience</h3>
             <p>As a software developer, I possess a diverse set of skills that enable me to design, develop, and deploy innovative software solutions. My expertise includes programming in multiple languages, building scalable applications, and ensuring clean, efficient code. I am skilled in problem-solving,</p>
@@ -195,7 +778,7 @@
             <div class="container">
                 <div class="title">SKILLS AND ABILITIES</div>
 
-                <h2>My Skills</h2>
+                <h1>My Skills</h1>
                 <p><i>What I Know</i></p>
 
                 <div class="skills-section">
@@ -242,14 +825,14 @@
         <section>
             <div>
                 <div>
-                    <img src = "assets/tictactoe.png" title = "tictactoe" alt = "tictactoe" width = "150"><br>
+                    <img src = "assets/tic%20tac%20toe%20png.png" title = "tictactoe" alt = "tictactoe" width = "250"><br>
                     <p>TIC TAC TOE gameAI-Powered Tic-Tac-Toe: Championship Edition is a digital game where players face off against an AI driven by the Minimax algorithm. The game features a 3x3 grid and utilizes OOP principles, recursion, and AI logic to deliver a challenging and interactive experience.</p>
                 </div>
 
             </div>
             <div>
                 <div>
-                    <img src = "assets/pizza.png" title = "pizza" alt = "pizza" width = "150"><br>
+                    <img src = "assets/pizza.png" title = "pizza" alt = "pizza" width = "250"><br>
                     <P>Pizza Hut  Management System(Layered)
 
                         Java language based project (APP)
@@ -259,7 +842,7 @@
             </div>
             <div>
                 <div>
-                    <img src = "assets/pizza.png" title = "pizza" alt = "pizza" width = "150"><br>
+                    <img src = "assets/pizza.png" title = "pizza" alt = "pizza" width = "250"><br>
                     <p>Pizza Hut Management System(MVC)
 
                         Java language based project (APP)
@@ -274,11 +857,11 @@
 
             <br><br>
             <div>
-                <img src="assets/portfolio.png" title="portfolio" alt="portfolio" width="20">
+                <img src="assets/icons/portfolio.png" title="portfolio" alt="portfolio" width="50">
             </div>
             <p>An interactive and visually captivating portfolio designed to reflect my journey, skills, and achievements. Crafted with precision and creativity, it seamlessly combines functionality with aesthetics, showcasing my expertise in cutting-edge technologies and innovative problem-solving.</p>
             <div>
-                <img src="assets/git.png" title="git" alt="git" width="20">
+                <img src="assets/logo/git.png" title="git" alt="git" width="50">
             </div>
             <p>Explore more of my projects and creations! Visit my LinkedIn or GitHub for details.</p>
         </section>
@@ -290,15 +873,17 @@
         <h3><b>Gallery</b></h3>
         <section>
             <div>
-                <img src = "assets/previous.png" title = "previous" alt = "previous" width = "20">
+                <img src = "assets/previous.png" title = "previous" alt = "previous" width = "50">
                 <div>
-                    <img src = "assets/trip jpg.jpg" title = "trip" alt = "trip" width = "120">
+                    <img src = "assets/trip jpg.jpg" title = "trip" alt = "trip" width = "145">
                     <img src = "assets/wedding jpg.jpg" title = "wedding" alt = "wedding" width = "120">
                     <img src = "assets/white jpg.jpg" title = "white" alt = "white" width = "120">
                     <img src = "assets/hotel jpg.jpg" title = "hotel" alt = "hotel" width = "120">
                     <img src = "assets/amco hotel.jpg" title = "amco hotel" alt = "amco hotel" width = "120">
+                    <img src = "assets/logo/green.jpg" title = "remekvin hotel" alt = "remekvin hotel" width = "120">
+
                 </div>
-                <img src = "assets/next.png" title = "next" alt = "next" width = "20">
+                <img src = "assets/logo/next.png" title = "next" alt = "next" width = "20">
             </div>
         </section>
     </main>
@@ -345,10 +930,10 @@
                 <h1>CONTACT ME</h1>
 
                 <div class="social-icons">
-                    <img src="email-icon.png" alt="Email">
-                    <img src="instagram-icon.png" alt="Instagram">
-                    <img src="facebook-icon.png" alt="Facebook">
-                    <img src="linkedin-icon.png" alt="LinkedIn">
+                    <img src="assets/logo/gmail.png" alt="Email">
+                    <img src="assets/logo/instagram.png" alt="Instagram">
+                    <img src="assets/logo/facebook.png" alt="Facebook">
+                    <img src="assets/logo/linkedin.png" alt="LinkedIn">
                 </div>
 
                 <div class="contact-info">
@@ -387,23 +972,23 @@
         <div>
             <h2>Follow Me</h2>
             <button>
-                <img src = "assets/facebook.png" title = "facebook" alt = "facebook" width = "40">
+                <img src = "assets/logo/facebook.png" title = "facebook" alt = "facebook" width = "40">
             </button>
             <button>
-                <img src = "assets/instagram.png" title = "instagram" alt = "instagram" width = "40">
+                <img src = "assets/logo/instagram.png" title = "instagram" alt = "instagram" width = "40">
             </button>
             <button>
-                <img src = "assets/linkedin.png" title = "linkedin" alt = "linkedin" width = "40">
+                <img src = "assets/logo/linkedin.png" title = "linkedin" alt = "linkedin" width = "40">
             </button>
             <button>
-                <img src = "assets/git.png" title = "git" alt = "git" width = "40">
+                <img src = "assets/logo/git.png" title = "git" alt = "git" width = "40">
             </button>
             <button>
-                <img src = "assets/gmail.png" title = "gmail" alt = "gmail" width = "40">
+                <img src = "assets/logo/gmail.png" title = "gmail" alt = "gmail" width = "40">
             </button>
         </div>
         <img src = "assets/yenu jpg.jpg" title = "footerImage" alt = "Himadi" width = "200">
-        <img src = "assets/icon.png" title = "LogoImage" alt = "Himadi" width = "200">
+        <img src = "assets/icons/icon.png" title = "LogoImage" alt = "Himadi" width = "200">
         <div>
             <h4>Navigation</h4>
             <a href = "#" class = "nav_item">Home</a>

@@ -4,7 +4,45 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="da98d20f-1244-40f4-b503-28311313eb55" name="Changes" comment="updated" />
+    <list default="true" id="da98d20f-1244-40f4-b503-28311313eb55" name="Changes" comment="updated">
+      <change afterPath="$PROJECT_DIR$/assets/logo/green.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sytles.css" beforeDir="false" afterPath="$PROJECT_DIR$/Sytles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/JS.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/NET.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/c.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/canva (2).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/facebook.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/figma.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/geany png.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/git.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/gmail.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/html.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ijse.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/instagram.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/intelij.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/java.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/linkedin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/location.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/mysql.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/next.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/nodejs.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/notion.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/open university logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/pascal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/php.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/portfolio.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/python.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/react.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/scenebuilder.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/springboot.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/vscode.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,8 +51,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -111,6 +149,11 @@
       <workItem from="1738847610887" duration="509000" />
       <workItem from="1738848144309" duration="9116000" />
       <workItem from="1738982439226" duration="794000" />
+      <workItem from="1738983303851" duration="505000" />
+      <workItem from="1739075291648" duration="48000" />
+      <workItem from="1739158555969" duration="218000" />
+      <workItem from="1740194029002" duration="1721000" />
+      <workItem from="1743577401939" duration="6636000" />
     </task>
     <task id="LOCAL-00001" summary="updated">
       <option name="closed" value="true" />
