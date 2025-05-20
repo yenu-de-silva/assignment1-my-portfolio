@@ -1,0 +1,46 @@
+.menu-checkbox {
+    display: none;
+}
+
+.menu-btn {
+    display: none;
+    cursor: pointer;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #333;
+    padding: 8px 12px;
+}
+
+/* For mobile view */
+@media (max-width: 768px) {
+    .menu-btn {
+        display: block;
+        width: 30px;
+        height: 30px;
+        background: url('assets/icons/menu-icon.png') no-repeat center;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background: #fff;
+        padding: 10px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+
+    .menu-checkbox:checked + .menu-btn + .navigation .menu {
+        display: flex;
+    }
+}

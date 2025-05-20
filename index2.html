@@ -21,6 +21,54 @@
     box-sizing: border-box;
   }
 
+  .menu-checkbox {
+    display: none;
+  }
+
+  .menu-btn {
+    display: none;
+    cursor: pointer;
+  }
+
+  .menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+
+  .menu li a {
+    text-decoration: none;
+    color: #333;
+    padding: 8px 12px;
+  }
+
+  /* For mobile view */
+  @media (max-width: 768px) {
+    .menu-btn {
+      display: block;
+      width: 30px;
+      height: 30px;
+      background: url('assets/icons/menu-icon.png') no-repeat center;
+    }
+
+    .menu {
+      display: none;
+      flex-direction: column;
+      gap: 10px;
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      background: #fff;
+      padding: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+
+    .menu-checkbox:checked + .menu-btn + .navigation .menu {
+      display: flex;
+    }
+  }
+
+
   /* Body and General Layout */
   body {
     font-family: 'Arial', sans-serif;
@@ -178,6 +226,49 @@
 
   button:focus {
     outline: none;
+  }
+  .home-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+  }
+
+  .home-text {
+    flex: 1;
+    min-width: 300px;
+  }
+
+  .home-img {
+    flex: 1;
+    text-align: center;
+  }
+
+  .btn {
+    display: inline-block;
+    margin: 8px 5px;
+    padding: 10px 20px;
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+  }
+
+  .btn img {
+    vertical-align: middle;
+    margin-right: 8px;
+  }
+
+  .social-icons a {
+    margin: 0 5px;
+  }
+
+  @media (max-width: 768px) {
+    .home-content {
+      flex-direction: column;
+      text-align: center;
+    }
   }
 
 
@@ -989,77 +1080,152 @@
 
 <body>
 
-<!--------------------------Navigation------------------------------------->
-<main id = "fullPg">
-  <header>
-    <!-- icon -->
-    <div>
-      <img src = "assets/icons/icon.png" title = "Himadi" alt = "my pic 1" width = "50"> portfolio
-    </div>
+<!--&lt;!&ndash;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;Navigation-&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&ndash;&gt;-->
+<!--<main id = "fullPg">-->
+<!--  <header>-->
+<!--    &lt;!&ndash; icon &ndash;&gt;-->
+<!--    <div>-->
+<!--      <img src = "assets/icons/icon.png" title = "Himadi" alt = "my pic 1" width = "50"> portfolio-->
+<!--    </div>-->
 
-    <!-- navigation -->
-    <nav class = "navigation">
-      <a href = "#" class = "nav_item">Home</a>
-      <a href = "#" class = "nav_item">About Me</a>
-      <a href = "#" class = "nav_item">Education</a>
-      <a href = "#" class = "nav_item">Skills</a>
-      <a href = "#" class = "nav_item">Projects</a>
-      <a href = "#" class = "nav_item">Gallery</a>
-      <a href = "#" class = "nav_item">Assignments</a>
-      <a href = "#" class = "nav_item">Contact Me</a>
-    </nav>
-  </header>
+<!--    &lt;!&ndash; navigation &ndash;&gt;-->
+<!--    <nav class = "navigation">-->
+<!--      <a href = "#" class = "nav_item">Home</a>-->
+<!--      <a href = "#" class = "nav_item">About Me</a>-->
+<!--      <a href = "#" class = "nav_item">Education</a>-->
+<!--      <a href = "#" class = "nav_item">Skills</a>-->
+<!--      <a href = "#" class = "nav_item">Projects</a>-->
+<!--      <a href = "#" class = "nav_item">Gallery</a>-->
+<!--      <a href = "#" class = "nav_item">Assignments</a>-->
+<!--      <a href = "#" class = "nav_item">Contact Me</a>-->
+<!--    </nav>-->
+<!--  </header>-->
 
-  <!--------------------------Home------------------------------------->
-  <main id = "homeMain">
-    <section>
-      <div><h3>Hi, I'm <b>Himadi Yenushka</b> </h3></div>
-      <p> Developer | UI UX Designer | Content Creator | Web Creator</p>
-      <P>
-        Crafting Code, Creating Futures.
-        I turn ideas into digital experiences.
-        Building seamless solutions through innovative code.
-
-        Coding the change I wish to see in the world.</P>
-    </section>
-    <section>
-      <div>
-        <img src = "assets/wedding%20jpg.jpg" title = "Himadi" alt = "my pic 1" width = "500">
+  <!--------------------------Navigation------------------------------------->
+  <main id="fullPg">
+    <header>
+      <!-- icon -->
+      <div class="logo">
+        <img src="assets/icons/icon.png" title="Himadi" alt="my pic 1" width="50"> portfolio
       </div>
-      <div>
-        <button>
-          <img src="assets/download cv.webp" alt="Git Icon" width = "100" > CV
-        </button>
-        <br><br>
 
-        <div>
-          <div>
-            <button>
-              <img src = "assets/logo/facebook.png" title = "facebook" alt = "facebook" width = "50">
-            </button>
-            <button>
-              <img src = "assets/logo/instagram.png" title = "instagram" alt = "instagram" width = "50">
-            </button>
-            <button>
-              <img src = "assets/logo/linkedin.png" title = "linkedin" alt = "linkedin" width = "50">
-            </button>
-            <button>
-              <img src = "assets/logo/git.png" title = "git" alt = "git" width = "50">
-            </button>
-            <button>
-              <img src = "assets/logo/gmail.png" title = "gmail" alt = "gmail" width = "50">
-            </button>
-          </div>
+      <!-- responsive navigation -->
+      <input type="checkbox" class="menu-checkbox" id="menu-checkbox">
+      <label class="menu-btn" for="menu-checkbox"></label>
+
+      <nav class="navigation">
+        <ul class="menu">
+          <li><a href="#home" class="nav_item">Home</a></li>
+          <li><a href="#about" class="nav_item">About Me</a></li>
+          <li><a href="#education" class="nav_item">Education</a></li>
+          <li><a href="#skills" class="nav_item">Skills</a></li>
+          <li><a href="#projects" class="nav_item">Projects</a></li>
+          <li><a href="#gallery" class="nav_item">Gallery</a></li>
+          <li><a href="#assignments" class="nav_item">Assignments</a></li>
+          <li><a href="#contact" class="nav_item">Contact Me</a></li>
+        </ul>
+      </nav>
+    </header>
+  </main>
+
+
+<!--  &lt;!&ndash;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;Home-&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&ndash;&gt;-->
+<!--  <main id = "homeMain">-->
+<!--    <section>-->
+<!--      <div><h3>Hi, I'm <b>Himadi Yenushka</b> </h3></div>-->
+<!--      <p> Developer | UI UX Designer | Content Creator | Web Creator</p>-->
+<!--      <P>-->
+<!--        Crafting Code, Creating Futures.-->
+<!--        I turn ideas into digital experiences.-->
+<!--        Building seamless solutions through innovative code.-->
+
+<!--        Coding the change I wish to see in the world.</P>-->
+<!--    </section>-->
+<!--    <section>-->
+<!--      <div>-->
+<!--        <img src = "assets/wedding%20jpg.jpg" title = "Himadi" alt = "my pic 1" width = "500">-->
+<!--      </div>-->
+<!--      <div>-->
+<!--        <button>-->
+<!--          <img src="assets/download cv.webp" alt="Git Icon" width = "100" > CV-->
+<!--        </button>-->
+<!--        <br><br>-->
+
+<!--        <div>-->
+<!--          <div>-->
+<!--            <button>-->
+<!--              <img src = "assets/logo/facebook.png" title = "facebook" alt = "facebook" width = "50">-->
+<!--            </button>-->
+<!--            <button>-->
+<!--              <img src = "assets/logo/instagram.png" title = "instagram" alt = "instagram" width = "50">-->
+<!--            </button>-->
+<!--            <button>-->
+<!--              <img src = "assets/logo/linkedin.png" title = "linkedin" alt = "linkedin" width = "50">-->
+<!--            </button>-->
+<!--            <button>-->
+<!--              <img src = "assets/logo/git.png" title = "git" alt = "git" width = "50">-->
+<!--            </button>-->
+<!--            <button>-->
+<!--              <img src = "assets/logo/gmail.png" title = "gmail" alt = "gmail" width = "50">-->
+<!--            </button>-->
+<!--          </div>-->
+<!--        </div>-->
+
+<!--        <h1>IT BERRIES</h1>-->
+<!--        <p>Like a berry patch, my skills and experiences are diverse and fruitful. I'm Himadi Yenushka, a developer passionate about cultivating ideas into innovative solutions.</p>-->
+<!--        <button>READ MORE</button>-->
+<!--        <br><br>-->
+<!--      </div>-->
+
+<!--    </section>-->
+<!--  </main>-->
+
+<!--------------------------Home------------------------------------->
+<section id="home">
+  <div class="container">
+    <div class="home-content">
+      <!-- Text Section -->
+      <div class="home-text">
+        <h3>Hello, I'm <span>Himadi Yenushka</span></h3>
+        <p>Developer | UI UX Designer | Content Creator | Web Creator</p>
+        <p>
+          Crafting Code, Creating Futures.<br>
+          I turn ideas into digital experiences.<br>
+          Building seamless solutions through innovative code.<br>
+          Coding the change I wish to see in the world.
+        </p>
+
+        <div class="btn-group">
+          <a href="#" class="btn">
+            <img src="assets/download cv.webp" alt="CV Icon" width="30"> Download CV
+          </a>
+          <a href="#projects" class="btn">Explore My Work</a>
         </div>
 
-        <h1>IT BERRIES</h1>
-        <p>Like a berry patch, my skills and experiences are diverse and fruitful. I'm Himadi Yenushka, a developer passionate about cultivating ideas into innovative solutions.</p>
-        <button>READ MORE</button>
-        <br><br>
+        <!-- Social Icons -->
+        <div class="social-icons">
+          <a href="#"><img src="assets/logo/facebook.png" title="facebook" alt="facebook" width="40"></a>
+          <a href="#"><img src="assets/logo/instagram.png" title="instagram" alt="instagram" width="40"></a>
+          <a href="#"><img src="assets/logo/linkedin.png" title="linkedin" alt="linkedin" width="40"></a>
+          <a href="#"><img src="assets/logo/git.png" title="git" alt="git" width="40"></a>
+          <a href="#"><img src="assets/logo/gmail.png" title="gmail" alt="gmail" width="40"></a>
+        </div>
+
+        <h2>IT BERRIES</h2>
+        <p>
+          Like a berry patch, my skills and experiences are diverse and fruitful.
+          I'm Himadi Yenushka, a developer passionate about cultivating ideas into innovative solutions.
+        </p>
+        <a href="#" class="btn">Read More</a>
       </div>
 
-    </section>
-  </main>
+      <!-- Image Section -->
+      <div class="home-img">
+        <img src="assets/wedding%20jpg.jpg" title="Himadi" alt="my pic 1" width="500">
+      </div>
+    </div>
+  </div>
+</section>
 
   <!-----------------------------About me---------------------------------------------->
   <main id = "aboutMe">

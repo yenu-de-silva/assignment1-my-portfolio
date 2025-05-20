@@ -1,0 +1,43 @@
+.home-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.home-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.home-img {
+    flex: 1;
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    margin: 8px 5px;
+    padding: 10px 20px;
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.btn img {
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+.social-icons a {
+    margin: 0 5px;
+}
+
+@media (max-width: 768px) {
+    .home-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
